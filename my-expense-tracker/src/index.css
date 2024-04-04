@@ -13,8 +13,20 @@ code {
     monospace;
 }
 
-:root {
+/* :root {
   --primary-color: #007bff; 
   --secondary-color: #6c757d; 
   --background: #F5C9C9;
+  --background-secondary: #d9d9d9;
+} */
+
+:root {
+  --primary-color: #007bff; 
+  --secondary-color: #6c757d; 
+  --background: #3D405B;
+  --background-secondary: #F4F1DE;
+  --text-primary: #E07A5F;
+  --box-shadow-dark-bg: 0 0 10px rgb(198, 241, 235);
+  --box-shadow-light-bg: 0 0 10px rgb(1, 53, 24);
+  --static-button: #81B29A;
 }
