@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+}
+
+form div:first-child {
+    padding: 10px;
+}
+
+.main-container {
+    background-color: var(--background);
+}
+
+.form-top-container {
+    background-color: #d9d9d9;
+    /* height: 100px;
+    width: 300px; */
+    padding: 90px 75px;
+}
+
+.inside-container {
+    position: relative;
+    top: 50px;
+}
+
+.form-container {
+    background-color: var(--background);
+    height: 400px;
+    width: 350px;
+    padding: 10px 10px;
+}
+
+div button {
+    position: relative;
+    top: 30px;
+}
+
+.danger-row {
+    position: relative;
+}
+
+.place-holder {
+    padding: 10px;
+}
+
+/* .email-error {
+    position: relative;
+    bottom: 115px;
+    left: 105px;
+    width: 100%;
+    padding: 10px;
+} */
+
+
+/* .email-error {
+    padding: 10px;
+} */
