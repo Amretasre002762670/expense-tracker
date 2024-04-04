@@ -43,12 +43,7 @@ const Login = () => {
                                     </div>
                                 </div>
                                 <div className="danger-row">
-                                    <div className="place-holder"></div>
-                                    {emailError && (
-                                        <div className="text-danger email-error">
-                                            Invalid email format
-                                        </div>
-                                    )}
+                                    {emailError ? <div className="text-danger email-error"> Invalid email format </div> : <div className="place-holder"></div>}
                                 </div>
                                 <div className="row g-3 align-items-center password-row">
                                     <div className="col-3">
@@ -59,8 +54,7 @@ const Login = () => {
                                     </div>
                                 </div>
                                 <div className="danger-row">
-                                <div className="place-holder"></div>
-                                    {passwordError && <div className="text-danger password-error">Password cannot be empty</div>}
+                                    {passwordError ? <div className="text-danger password-error">Password cannot be empty</div> : <div className="place-holder"></div>}
                                 </div>
                                 <div className="row g-3 button-row align-items-center">
                                     <button type="submit" className="btn btn-primary">Login</button>

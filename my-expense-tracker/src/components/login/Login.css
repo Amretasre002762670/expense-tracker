@@ -29,7 +29,7 @@ form div:first-child {
 
 .inside-container {
     position: relative;
-    top: 50px;
+    top: 30px;
 }
 
 .form-container {
@@ -44,12 +44,8 @@ div button {
     top: 30px;
 }
 
-.danger-row {
-    position: relative;
-}
-
 .place-holder {
-    padding: 10px;
+    height: 44px;
 }
 
 /* .email-error {
