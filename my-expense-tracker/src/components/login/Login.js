@@ -1,7 +1,11 @@
 import { useState } from 'react';
+// import { bcrypt } from 'bcrypt';
+
 import '../login/Login.css';
 
 const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
     const [emailErrorText, setEmailErrorText] = useState('');
@@ -32,11 +36,32 @@ const Login = () => {
         }
     };
 
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault();
+
+    //     // Hash the password using bcrypt
+    //     const hashedPassword = await bcrypt.hash(password, 10);
+
+    //     // Send the hashed password and other form data to your backend API
+    //     const formData = {
+    //         email,
+    //         password: hashedPassword,
+    //     };
+
+    //     // Send formData to your backend API using fetch or axios
+    //     // Example: fetch('/login', { method: 'POST', body: JSON.stringify(formData) })
+
+    //     // Clear the form fields after submission
+    //     setEmail('');
+    //     setPassword('');
+    // };
+
+
     return (
         <div className="container-fluid main-container">
             <div className='container'>
                 <div className="form-top-container">
-                    <h1>Login/Signup</h1>
+                    <h1>Login</h1>
                     <div className="form-container">
                         <form>
                             <div className="inside-container">
@@ -66,17 +91,12 @@ const Login = () => {
                                     <a href="/signup" className="signup-link">Sign Up Instead</a>
                                 </div>
                                 <div className="row g-3 button-row align-items-center">
-                                    <button type="submit" className="btn btn-primary">Login</button>
+                                    <button type="submit" className="btn login-button">Login</button>
                                 </div>
-                                
-
                             </div>
-
                         </form>
                     </div>
-
                 </div>
-
             </div>
         </div>
     );
