@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    bottom: 30px;
+    color: var(--text-primary) !important;
+    animation: fadeInOut 2s infinite;
+    /* Change the duration as needed */
+}
+
+.inside-container {
+    padding: 10px;
+}
+
+.main-container {
+    background-color: var(--background);
+}
+
+.form-top-container {
+    background-color: var(--background-secondary);
+    /* height: 100px;
+    width: 300px; */
+    padding: 90px 75px;
+    box-shadow: var(--box-shadow-dark-bg);
+    border-radius: 10px;
+}
+
+.inside-container {
+    position: relative;
+    top: 30px;
+}
+
+.form-container {
+    background-color: var(--background);
+    height: 410px;
+    width: 350px;
+    padding: 10px 10px;
+    box-shadow: var(--box-shadow-light-bg);
+    border-radius: 10px;
+}
+
+div button {
+    position: relative;
+    top: 30px;
+    background-color: var(--static-button);
+}
+
+.login-button {
+    background-color: var(--static-button) !important;
+    color: white !important;
+}
+
+.place-holder {
+    height: 44px;
+}
+
+.container .form-container .input-text-box {
+    border: none;
+    /* border-bottom: 2px solid #000000; */
+    background-color: var(--text-primary);
+    border-radius: 0;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(203, 137, 106, 0.989);
+}
+
+/* .container .form-container .input-text-box .input-text-box::placeholder {
+    color: rgb(231, 231, 231) !important;
+} */
+
+.container .form-container .input-text-box:focus {
+    outline: none;
+    border-bottom-color: var(--background-secondary);
+}
+
+label {
+    font-weight: bold;
+    color: var(--text-primary) !important;
+}
+
+.error-message {
+    transform: translateX(30%);
+    font-weight: bold;
+    padding: 5px;
+    height: 44px;
+}
+
+.link-row a {
+    transform: translateX(30%);
+    color: var(--text-primary) !important;
+    font-size: 17px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-top-container {
+        padding: 60px 30px;
+    }
+
+    .inside-container {
+        top: 20px;
+    }
+
+    div button {
+        top: 20px;
+    }
+}
